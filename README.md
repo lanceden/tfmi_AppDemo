@@ -7,4 +7,5 @@
 --
 ### Remark
 * Using AspNet Webapi2 + Ionic JS&CSS
+* Using LocalDb
 * For tfmi demo
