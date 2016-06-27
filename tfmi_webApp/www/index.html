@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <script src="js/myControllers.js"></script>
+</head>
+
+<body ng-controller="IndexController">
+<!-- sideMenus -->
+<ion-side-menus>
+  <ion-side-menu-content>
+    <!-- header -->
+    <ion-header-bar align-title="center" class="bar-positive">
+      <button class="button " ng-click="toggleLeftSideMenu()">
+        <i class="icon ion-navicon-round"></i>
+      </button>
+
+      <h1 class="title" ng-bind="appTitle"></h1>
+    </ion-header-bar>
+
+    <!-- content -->
+    <ion-content class="">
+      <ion-slide-box does-continue="true" auto-play="true">
+        <ion-slide>
+          <div class="item item-image">
+            <img src="../www/img/headbg_01.jpg">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="item item-image">
+            <img src="../www/img/headbg_02.jpg">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="item item-image">
+            <img src="../www/img/headbg_03.jpg">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="item item-image">
+            <img src="../www/img/headbg_04.jpg">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="item item-image">
+            <img src="../www/img/headbg_05.jpg">
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+      <div class="button-bar">
+        <a ui-sref="news" class="button">最新消息</a>
+        <a ui-sref="productList" class="button">商品櫥窗</a>
+        <a ui-sref="services" class="button">服務項目</a>
+      </div>
+
+      <!-- 分部視圖 -->
+      <ion-nav-view></ion-nav-view>
+    </ion-content>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" width="150">
+    <ion-content class="stable-bg">
+      <ion-list>
+        <ion-item>
+          <h2 class="title light-bg">關於臺產</h2>
+          <a menu-close  ui-sref="companyInfo" class="button button-light title text-center icon ion-information-circled">公司簡介</a><br/>
+        </ion-item>
+        <ion-item>
+          <h2 class="title light-bg">企業社會責任</h2>
+          <a menu-close  ui-sref="investor" class="button button-light title text-center icon ion-compose">公開資訊</a><br/>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+
+<!-- footers -->
+<ion-footer-bar class="tabs-striped">
+  <div class="tabs tabs-icon-left">
+    <a class="tab-item" ui-sref="news">
+      <i class="icon ion-home"></i>
+      首頁
+    </a>
+    <a class="tab-item" ui-sref="onlineStore">
+      <i class="icon ion-document-text"></i>
+      線上專區
+    </a>
+    <a class="tab-item" ui-sref="feedBack">
+      <i class="icon ion-chatbubble-working"></i>
+      建議
+    </a>
+  </div>
+</ion-footer-bar>
+</body>
+</html>

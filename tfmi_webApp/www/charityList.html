@@ -1,0 +1,13 @@
+<ion-view>
+  <ion-content>
+    <ion-list can-swipe="listCanSwipe" ng-repeat="item in charityList">
+      <ion-item  class="item-thumbnail-left item-text-wrap">
+        <img ng-src="{{item.tfmi_crSrc}}">
+          <h2 ng-bind="item.tfmi_crTitle"></h2>
+        <p class="item-text-wrap">
+          {{item.tfmi_crContent}}
+        </p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,15 @@
+<ion-nav-view>
+  <ion-view>
+    <ion-content>
+      <ion-list can-swipe="listCanSwipe" ng-repeat="item in servicesList">
+        <ion-item  class="item-thumbnail-left item-text-wrap">
+          <img ng-src="{{item.tfmi_serImgSrc}}">
+            <h2 ng-bind="item.tfmi_serTitle"></h2>
+          <p class="item-text-wrap">
+            {{item.tfmi_serContent}}
+          </p>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>

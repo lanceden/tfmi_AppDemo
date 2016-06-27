@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tfmi_webApi", "tfmi_demo\tfmi_webApi.csproj", "{A3B4E646-88FC-4527-A7BD-26028779618C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tfmi_webApp", "tfmi_webApp\tfmi_webApp.csproj", "{8C24F38C-E015-4D6E-A631-4F97195FDCDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3B4E646-88FC-4527-A7BD-26028779618C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B4E646-88FC-4527-A7BD-26028779618C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B4E646-88FC-4527-A7BD-26028779618C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B4E646-88FC-4527-A7BD-26028779618C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C24F38C-E015-4D6E-A631-4F97195FDCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C24F38C-E015-4D6E-A631-4F97195FDCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C24F38C-E015-4D6E-A631-4F97195FDCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C24F38C-E015-4D6E-A631-4F97195FDCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

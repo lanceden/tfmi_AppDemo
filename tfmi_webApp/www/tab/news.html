@@ -1,0 +1,62 @@
+
+<ion-nav-view >
+  <ion-content>
+    <ion-list ng-repeat="item in newsList">
+      <ion-item class="item-divider">
+        <a ui-sref="{{item.tfmi_newsHref}}">{{item.tfmi_newsTitle}}</a>
+      </ion-item>
+    </ion-list>
+    <h2 class="text-center light-bg icon ion-happy-outline">服務項目</h2>
+    <div class="row">
+      <div class="col">
+        <div class="item item-image">
+          <img src="../www/img/col/col_car.jpg">
+        </div>
+        <h4>汽(機)車保險</h4>
+        <span>汽(機)車保險分為「強制險」與「任意險」，
+          強制險為法令規定須投保險種，
+          而任意險則可依客戶需求自由選擇投保。</span>
+      </div>
+      <div class="col">
+        <div class="item item-image">
+          <img src="../www/img/col/col_house.jpg">
+        </div>
+        <h4>住宅火險及地震險</h4>
+        <span>保障您的房屋財產安全與您一同守護「溫暖的家」。</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="item item-image">
+          <img src="../www/img/col/col_avoid.jpg">
+        </div>
+        <h4>傷害險</h4>
+        <span>承保被保險人因意外傷害事故所致之損失。</span>
+      </div>
+      <div class="col">
+        <div class="item item-image">
+          <img src="../www/img/col/col_health.jpg">
+        </div>
+        <h4>健康險</h4>
+        <span>承保被保險人因疾病事故所致之損失。</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="item item-image">
+          <img src="../www/img/col/col_travel.jpg">
+        </div>
+        <h4>旅遊綜合保險</h4>
+        <span>承保被保險人旅遊期間因意外傷害事故、疾病事故所致之損失。</span>
+      </div>
+      <div class="col">
+        <div class="item item-image">
+          <img src="../www/img/col/col_partTime.jpg">
+        </div>
+        <h4>打工渡假專區</h4>
+        <span>在你的旅途開始前，讓我們先幫你解決可能遇到的問題。</span>
+      </div>
+    </div>
+  </ion-content>
+  </ion-view>
+</ion-nav-view>

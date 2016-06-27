@@ -1,0 +1,28 @@
+
+<ion-view>
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        建議與回饋
+      </div>
+      <div class="item item-text-wrap">
+        歡迎大家光臨台灣產物保險，對於臺產或保險有任何疑問或建議，
+        歡迎各位多多利用這裡的留言版，我們的客服人員將竭盡為您解答和服務。
+      </div>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" ng-model="formModel.name" placeholder="您的姓名">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="formModel.title" placeholder="標題">
+        </label>
+        <label class="item item-input">
+          <textarea rows="8" ng-model="formModel.comment"  placeholder="Comments"></textarea>
+        </label>
+        <button class="button button-full button-positive" ng-click="submit()">
+          確定送出
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
